@@ -1,0 +1,202 @@
+/*============ RESET ===============*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*============ VARIABLES ===============*/
+:root {
+  --header-height: 4.5rem;
+
+  /* colors */
+  --hue: 240;
+  /* HSL color mode */
+  --base-color: hsl(var(--hue) 66% 60%);
+  --title-color: hsl(var(--hue) 50% 50%);
+  --text-color: hsl(0 100% 100%);
+  --text-color-light: yellowgreen;
+  --body-color: hsl(0 100% 100%);
+
+  /* fonts */
+  --title-font-size: 1.5rem;
+  --subtitle-font-size: 1.125rem;
+
+  --title-font: 'Poppins', sans-serif;
+  --body-font: 'DM Sans', sans-serif;
+}
+
+/*============ BASE ===============*/
+html {
+  scroll-behavior: smooth;
+}
+
+button {
+  background-color: var(--base-color);
+  color: var(--text-color);
+  height: 1.8rem;
+  display: inline-flex;
+  align-items: center;
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  font: 500 1.1rem var(--body-font);
+}
+
+body {
+  font: 400 1.1rem var(--body-font);
+  color: var(--text-color);
+  background-image: url(./assets/fotos/IMG_0668.JPG);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+/*============ LAYOUT ===============*/
+.container {
+  margin: auto;
+  max-width: 100%;
+}
+
+#header {
+  border-bottom: 1px solid #e4e4e4;
+  margin-bottom: 1rem;
+  display: flex;
+  opacity: 0.9;
+  width: 100%;
+  position: fixed;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  background: linear-gradient(blue, yellowgreen);
+}
+
+#header a {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.container .back {
+  font: 700 1.3rem var(--title-font);
+  color: var(--text-color);
+  margin: 0.3rem;
+}
+
+/*============ Logo ===============*/
+.logo {
+  font: 700 1.3rem var(--title-font);
+  color: var(--text-color);
+  margin: 0.3rem;
+}
+
+.logo span {
+  color: var(--text-color-light);
+}
+
+.icon-whatsapp {
+  color: var(--text-color-light);
+}
+
+main {
+  display: grid;
+  margin-top: 3rem;
+  justify-content: center;
+  text-align: center;
+  color: black;
+}
+
+#fieldset {
+  max-width: 15rem;
+  font-size: 1.5rem;
+  border: transparent;
+}
+#fieldset {
+  display: inline;
+  align-items: center;
+  max-width: 30rem;
+}
+
+#name,
+#email {
+  width: 15rem;
+}
+
+#fone {
+  width: 6rem;
+}
+
+/*============ FOOTER ===============*/
+footer .container {
+  text-align: center;
+  background: var(--base-color);
+  max-width: 100%;
+}
+
+footer .logo {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+}
+
+footer .brand p {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+footer i {
+  font-size: 1.5rem;
+  color: var(--text-color-light);
+  margin-top: 1rem;
+}
+
+footer .social {
+  display: inline-flex;
+}
+
+footer .social a {
+  margin: 1.5rem;
+  transition: 0.3s;
+}
+
+footer .social a:hover {
+  transform: translateY(-8px);
+}
+
+/*====== MEDIA QUERIES ======= */
+/* extra large devices: 1200 > */
+@media (min-width: 992px) {
+  /* reusable classes */
+
+  #header .back {
+    font: 700 1.3rem var(--title-font);
+    color: var(--text-color);
+    margin: 0.3rem;
+    margin-right: 4rem;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #header .logo {
+    margin-left: 4rem;
+  }
+
+  /*==== FOOTER ====*/
+
+  footer .container {
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1.5rem;
+    opacity: 0.8;
+  }
+
+  main {
+    margin-top: var(--header-height);
+  }
+}
