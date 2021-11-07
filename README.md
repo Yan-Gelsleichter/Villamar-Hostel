@@ -37,6 +37,6 @@ Bibliotecas:
 ## 🔖 Layout
 
 Projeto de website com tema voltado para hostel, e servindo de base para desenvolvimento de websites diversos.
-Você pode visualizar o layout do projeto através desse link https://yan-gelsleichter.github.io/villamar-hostel/
+Você pode visualizar o layout do projeto através desse link https://yan-gelsleichter.github.io/Villamar-Hostel/
 
 
