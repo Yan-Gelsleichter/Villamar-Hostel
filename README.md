@@ -2,7 +2,7 @@
   Villamar Hostel
 </h2>
 <h3 align="center">
-  Tema de web site desenvolvido para Hostel
+  Tema de website desenvolvido para Hostel
 </h3>
 
 <br>
